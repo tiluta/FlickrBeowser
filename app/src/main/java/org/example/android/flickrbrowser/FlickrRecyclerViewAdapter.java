@@ -23,7 +23,7 @@ public class FlickrRecyclerViewAdapter extends RecyclerView.Adapter<FlickrImageV
 
     @Override
     public FlickrImageViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.browse, null);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.browse, viewGroup, false);
         FlickrImageViewHolder flickrImageViewHolder = new FlickrImageViewHolder(view);
         return flickrImageViewHolder;
     }

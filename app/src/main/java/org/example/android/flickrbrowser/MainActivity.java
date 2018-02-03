@@ -49,7 +49,6 @@ public class MainActivity extends BaseActivity {
                         Toast.makeText(MainActivity.this, "Long tap",
                                Toast.LENGTH_SHORT).show();;
 
-
             }
                 }));
 
@@ -71,10 +70,7 @@ public class MainActivity extends BaseActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
         if(id == R.id.menu_search){
             Intent intent = new Intent(this, SearchActivity.class);
             startActivity(intent);
